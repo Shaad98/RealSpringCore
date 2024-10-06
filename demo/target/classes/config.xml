@@ -10,24 +10,18 @@
                            http://www.springframework.org/schema/context/spring-context.xsd">
     
     <bean class="com.example.Address" name="address">
-        <property name="street">
-            <value>Sahara Nagar</value>
-        </property>
-        <property name="city">
-            <value>Solapur</value>
-        </property>
+        <property name="street" value="Sahara Nagar"/>
+        
+        <property name="city" value="Solapur"/>
+        
     </bean>
     
     <bean class="com.example.Student" name="student">
-        <property name="id">
-            <value>12</value>
-        </property>
-        <property name="name">
-            <value>Shaad</value>
-        </property>
-        <property name="address">
-            <ref  bean="address"/>
-        </property>
+        <property name="id" value="12"/>
+           
+           
+        <property name="address" ref="address"/>
+           
     </bean>
   
                
