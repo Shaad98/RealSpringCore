@@ -17,7 +17,7 @@ public class App
         @SuppressWarnings("resource")
         // ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
         ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
-        Student student = context.getBean("student",Student.class);
+        Student student = context.getBean("obj",Student.class);
         System.out.println(student);
     }
 }
