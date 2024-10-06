@@ -1,9 +1,15 @@
 package com.example;
 
-public class Student {
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
+@Component
+public class Student {
+    @Value("12")
     private int id;
+    @Value("Shaad")
     private String name;
+    @Value("#{address}")
     private Address address;
 
     public int getId() {
