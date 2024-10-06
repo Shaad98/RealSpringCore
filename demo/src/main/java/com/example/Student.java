@@ -1,15 +1,15 @@
 package com.example;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
+// import org.springframework.stereotype.Component;
 
 
 public class Student {
-    @Value("12")
+    // @Value("12")
     private int id;
-    @Value("Shaad")
+    // @Value("Shaad")
     private String name;
-    @Value("#{new java.lang.String('Solapur')}")
+    // @Value("#{new java.lang.String('Solapur')}")
     private String city;
     public int getId() {
         return id;
