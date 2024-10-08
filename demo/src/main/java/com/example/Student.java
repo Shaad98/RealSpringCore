@@ -1,13 +1,13 @@
 package com.example;
 
-
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class Student {
    
     private int id;
     
     private String name;
-   
+   @Autowired
     private Address address;
 
     public int getId() {

@@ -21,7 +21,7 @@ public class Config {
         Student student = new Student();
         student.setId(101);
         student.setName("Shanks");
-        student.setAddress(getAddress());
+        
         return student;
     }
 }
